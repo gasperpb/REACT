@@ -1,10 +1,11 @@
 import "./App.css";
+import IMCCalculator from "./componnets/imc";
 import ImcScreen from "./componnets/imc";
 
 function App() {
   return (
     <div className="App">
-      <ImcScreen />
+      <IMCCalculator />
     </div>
   );
 }

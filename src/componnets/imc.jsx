@@ -1,46 +1,42 @@
 import React, { useState } from 'react';
+import './IMCCalculator.css';
 
-function ImcScreen() {
-    const [height, setHeight] = useState('');
+function IMCCalculator() {
     const [weight, setWeight] = useState('');
-    const [result, setResult] = useState(null);
+    const [height, setHeight] = useState('');
+    const [result, setResult] = useState('');
+    const [message, setMessage] = useState('');
 
-    const calculateImc = () => {
-        if (!height || !weight) {
-            alert('Por favor, preencha todos os campos!');
-            return;
+    const handleCalculate = () => {
+        const bmi = weight / (height / 100) ** 2;
+        setResult(bmi.toFixed(2));
+
+        if (bmi >= 30) {
+            setMessage('Você está obeso.');
+        } else {
+            setMessage('');
         }
-
-        const heightInMeters = height / 100;
-        const imc = weight / (heightInMeters * heightInMeters);
-        setResult(imc.toFixed(2));
     };
 
     return (
-        <div>
+        <div className="container">
             <h1>Calculadora de IMC</h1>
-            <div>
-                <label htmlFor="height">Altura (cm):</label>
-                <input
-                    type="number"
-                    id="height"
-                    value={height}
-                    onChange={(e) => setHeight(e.target.value)}
-                />
+            <div className="form-group">
+                <label>Peso (kg):</label>
+                <input type="number" value={weight} onChange={(e) => setWeight(e.target.value)} />
             </div>
-            <div>
-                <label htmlFor="weight">Peso (kg):</label>
-                <input
-                    type="number"
-                    id="weight"
-                    value={weight}
-                    onChange={(e) => setWeight(e.target.value)}
-                />
+            <div className="form-group">
+                <label>Altura (cm):</label>
+                <input type="number" value={height} onChange={(e) => setHeight(e.target.value)} />
             </div>
-            <button onClick={calculateImc}>Calcular</button>
-            {result && <p>Seu IMC é {result}</p>}
+            <div className="form-group">
+                <button onClick={handleCalculate}>Calcular</button>
+            </div>
+            {result && <p className="result">Seu IMC é: {result}</p>}
+            {message && <p className="result">{message}</p>}
         </div>
     );
 }
 
-export default ImcScreen;
+
+export default IMCCalculator;
