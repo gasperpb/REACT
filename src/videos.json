@@ -1,0 +1,25 @@
+{
+  "videos": [
+    {
+      "id": 1,
+      "title": "Treino de pernas para iniciantes",
+      "description": "Nesse treino vamos mostrar exercícios simples para iniciantes que desejam fortalecer as pernas.",
+      "url": "https://youtu.be/Fem-R7n59O8",
+      "thumbnail": "https://img.youtube.com/vi/123456/maxresdefault.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Treino de peito avançado",
+      "description": "Nesse treino vamos mostrar exercícios avançados para quem já tem experiência na academia.",
+      "url": "https://www.youtube.com/watch?v=789012",
+      "thumbnail": "https://img.youtube.com/vi/789012/maxresdefault.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Como ter uma alimentação saudável",
+      "description": "Nesse vídeo vamos mostrar dicas de alimentação para quem deseja manter uma dieta saudável.",
+      "url": "https://www.youtube.com/watch?v=345678",
+      "thumbnail": "https://img.youtube.com/vi/345678/maxresdefault.jpg"
+    }
+  ]
+}
