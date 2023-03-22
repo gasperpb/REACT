@@ -1,10 +1,11 @@
 import "./App.css";
-import Conversor from "./dolarreal";
+
+import BibleVerse from "./geraverci";
 
 function App() {
   return (
     <div className="App">
-      <Conversor />
+      <BibleVerse />
     </div>
   );
 }
