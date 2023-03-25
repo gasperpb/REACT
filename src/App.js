@@ -1,11 +1,10 @@
 import "./App.css";
-
-import BibleVerse from "./geraverci";
+import LoginScreen from "./components/login";
 
 function App() {
   return (
     <div className="App">
-      <BibleVerse />
+      <LoginScreen />
     </div>
   );
 }
