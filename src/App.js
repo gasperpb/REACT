@@ -1,10 +1,9 @@
 import "./App.css";
-import LoginScreen from "./components/login";
-
+import BarChartComponent from "./components/grafico/graficobarras";
 function App() {
   return (
     <div className="App">
-      <LoginScreen />
+      <BarChartComponent />
     </div>
   );
 }
