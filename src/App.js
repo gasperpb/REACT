@@ -1,9 +1,9 @@
 import "./App.css";
-import BarChartComponent from "./components/grafico/graficobarras";
+import Multselect from "./components/multselect/multselect";
 function App() {
   return (
     <div className="App">
-      <BarChartComponent />
+      <Multselect />
     </div>
   );
 }
