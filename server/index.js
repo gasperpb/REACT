@@ -5,6 +5,6 @@ app.get("/", (req, res) => {
   res.send("Bem-vindo à API do meu projeto!");
 });
 
-app.listen(3000, () => {
+app.listen(3001, () => {
   console.log("A API está funcionando na porta 3000.");
 });

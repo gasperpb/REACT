@@ -1,9 +1,9 @@
 import "./App.css";
-import Multselect from "./components/multselect/multselect";
+import Filter from "./components/filter/filter";
 function App() {
   return (
     <div className="App">
-      <Multselect />
+      <Filter />
     </div>
   );
 }
